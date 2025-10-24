@@ -1,0 +1,21 @@
+<!-- logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" role="img" aria-labelledby="title desc">
+  <title id="title">Invoiceror logo</title>
+  <desc id="desc">Lowercase “in”, orange check mark instead of the v, then “oiceror”.</desc>
+
+  <!-- word parts -->
+  <g font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="700" fill="#111111">
+    <!-- "in" -->
+    <text x="0" y="82" font-size="72" letter-spacing="0.2">in</text>
+    <!-- "oiceror" -->
+    <text x="212" y="82" font-size="72" letter-spacing="0.2">oiceror</text>
+  </g>
+
+  <!-- orange check (the “v”) -->
+  <path d="M130 66 L150 86 L195 34"
+        fill="none"
+        stroke="#FF6B00"  <!-- change if your brand orange differs -->
+        stroke-width="12"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
