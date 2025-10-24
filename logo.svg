@@ -1,21 +1,31 @@
 <!-- logo.svg -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
   <title id="title">Invoiceror logo</title>
-  <desc id="desc">Lowercase “in”, orange check mark instead of the v, then “oiceror”.</desc>
+  <desc id="desc">Lowercase “in”, orange check replacing the v, then “oiceror”.</desc>
 
-  <!-- word parts -->
-  <g font-family="Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-weight="700" fill="#111111">
-    <!-- "in" -->
-    <text x="0" y="82" font-size="72" letter-spacing="0.2">in</text>
-    <!-- "oiceror" -->
-    <text x="212" y="82" font-size="72" letter-spacing="0.2">oiceror</text>
-  </g>
+  <defs>
+    <style>
+      .word {
+        font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        fill: #111111;
+        letter-spacing: 0.2px;
+      }
+    </style>
+  </defs>
 
-  <!-- orange check (the “v”) -->
-  <path d="M130 66 L150 86 L195 34"
+  <!-- "in" -->
+  <text class="word" x="0" y="84" font-size="72">in</text>
+
+  <!-- the orange check (visually substituting for the "v") -->
+  <!-- Tuned to sit just above the baseline, like in your app -->
+  <path d="M132 62 L151 80 L196 36"
         fill="none"
-        stroke="#FF6B00"  <!-- change if your brand orange differs -->
-        stroke-width="12"
+        stroke="#FF6B00"
+        stroke-width="11"
         stroke-linecap="round"
         stroke-linejoin="round"/>
+
+  <!-- "oiceror" -->
+  <text class="word" x="212" y="84" font-size="72">oiceror</text>
 </svg>
