@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Invoiceror Logo Embed</title>
+<style>
+  html,body{height:100%;margin:0}
+  body{background:#FFFFFF; display:grid; place-items:center}
+  .frame{width:min(720px, 90vw); padding:24px; text-align:center}
+  img{max-width:100%; height:auto; image-rendering:-webkit-optimize-contrast}
+</style>
+</head>
+<body>
+  <div class="frame" aria-label="Invoiceror Logo">
+    <!-- Replace the src URL below with your public logo URL (PNG or SVG) -->
+    <img src="https://YOUR-DOMAIN/path/to/invoiceror-logo.svg" alt="Invoiceror" width="640" />
+  </div>
+</body>
+</html>
