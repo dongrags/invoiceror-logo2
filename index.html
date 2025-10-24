@@ -1,19 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Invoiceror Logo</title>
 <style>
   html,body{height:100%;margin:0}
-  body{display:grid;place-items:center;background:#fff}
-  .frame{width:min(720px,90vw);text-align:center;padding:24px}
-  img{max-width:100%;height:auto}
+  /* Use transparent if you want Canva to show the canvas color behind */
+  body{display:grid;place-items:center;background:#ffffff}
+  /* Scale the logo responsively */
+  svg{width:min(90vw, 1200px); height:auto; display:block}
+  text{font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif}
 </style>
 </head>
 <body>
-  <div class="frame" aria-label="Invoiceror Logo">
-    <!-- If you uploaded logo.svg to the same repo root -->
-    <img src="./logo.svg" alt="Invoiceror" width="640">
-  </div>
+  <!-- Inline SVG (no external file needed) -->
+  <svg viewBox="0 0 460 120" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid meet">
+    <title id="title">Invoiceror logo</title>
+    <desc id="desc">Lowercase “in”, orange check replacing the v, then “oiceror”.</desc>
+
+    <!-- word parts -->
+    <g font-weight="700" fill="#111111">
+      <!-- "in" -->
+      <text x="0" y="82" font-size="72" letter-spacing="0.2">in</text>
+      <!-- "oiceror" (shift as needed) -->
+      <text x="212" y="82" font-size="72" letter-spacing="0.2">oiceror</text>
+    </g>
+
+    <!-- orange check (the “v”) -->
+    <path d="M130 66 L150 86 L195 34"
+          fill="none"
+          stroke="#FF6B00"  <!-- change to your exact brand orange if needed -->
+          stroke-width="12"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
 </body>
 </html>
